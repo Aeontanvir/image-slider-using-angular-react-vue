@@ -30,7 +30,10 @@
       "eslint:recommended"
     ],
     "parserOptions": {
-      "parser": "@babel/eslint-parser"
+      "parser": "@babel/eslint-parser",
+      "requireConfigFile": false, 
+      "ecmaVersion": 2018,
+      "sourceType": "module"
     },
     "rules": {}
   },
