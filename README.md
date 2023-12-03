@@ -1,4 +1,4 @@
-# Image Slider Demo Repository
+# Image Slider using Angular, React, and Vue
 
 ## Overview:
 
