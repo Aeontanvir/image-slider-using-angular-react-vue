@@ -1,25 +1,35 @@
 <template>
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="container">
+    <ImageSlider :slides="slides" />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ImageSlider from "./components/ImageSlider.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    ImageSlider,
+  },
+  data() {
+    return {
+      slides: [
+        { url: "https://picsum.photos/id/231/700/400", title: "Image slide 1" },
+        { url: "https://picsum.photos/id/232/700/400", title: "Image slide 2" },
+        { url: "https://picsum.photos/id/233/700/400", title: "Image slide 3" },
+        { url: "https://picsum.photos/id/234/700/400", title: "Image slide 4" },
+        { url: "https://picsum.photos/id/235/700/400", title: "Image slide 5" },
+      ],
+    };
+  },
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.container {
+  margin: 100px auto 0;
+  width: 700px;
+  height: 400px;
 }
 </style>
