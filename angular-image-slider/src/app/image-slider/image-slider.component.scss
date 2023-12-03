@@ -1,0 +1,53 @@
+.slider{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-position: center;
+  background-size: cover;
+}
+
+.arrow-left{
+  position: absolute;
+  top: calc(50% - 34px);
+  left: 30px;
+  font-size: 72px;
+  color: white;
+  opacity: .3;
+  cursor: pointer;
+}
+.arrow-left:hover{
+  opacity: 1;
+}
+.arrow-right{
+  position: absolute;
+  top: calc(50% - 34px);
+  right: 30px;
+  font-size: 72px;
+  color: white;
+  opacity: .3;
+  cursor: pointer;
+}
+.arrow-right:hover{
+  opacity: 1;
+}
+
+.indicators{
+  display: flex;
+  justify-content: center;
+}
+.indicator{
+  font-size: 30px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.active{
+  color: gray;
+  cursor: no-drop;
+}

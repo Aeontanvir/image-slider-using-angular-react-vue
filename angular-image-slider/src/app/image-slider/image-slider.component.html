@@ -1,0 +1,11 @@
+<div class="slider">
+  <div class="arrow-left"
+    (click)="onPrevious()">❰</div>
+  <div class="arrow-right"
+    (click)="onNext()">❱</div>
+  <div class="slide" [ngStyle]="{'background-image': 'url(' + slides[currentIndex].url + ')'}">
+  </div>
+  <div class="indicators">
+    <div class="indicator" *ngFor="let slide of slides; index as i" (click)="onIndex(i)" [ngClass]="{'active' : i===currentIndex}" >●</div>
+  </div>
+</div>
